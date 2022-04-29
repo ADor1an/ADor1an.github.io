@@ -1,0 +1,141 @@
+
+.content div.container-fluid {
+    width:100% ;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+
+.text-container {
+    width:100%;
+    height:auto;
+    margin: 0 40px 40px 40px;
+    background-color: #5c636a;
+}
+
+.ind-contacts {
+    margin: 20px;
+}
+
+.contact-block {
+    width: 90%;
+    height: 450px;
+    margin: 30px 30px 10px 30px;
+    background: #5c636a;
+}
+
+.contact-block button:hover {
+    color: #dcc874;
+    background-color: #150e0e;
+}
+
+.contact-block button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid 1px #dad87d;
+    border-radius: 25px;
+    margin: 0 25px;
+}
+.contact-block button svg {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-block div.col {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    /*margin-top: 15px;*/
+    /*margin-bottom:15px;*/
+    /*margin-left: 15px;*/
+    /*margin-right: 15px;*/
+    /*height: 45%;*/
+    /*background-color: #5c636a;*/
+    padding: 20px 20px 20px;
+
+}
+.contact-block div.col {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    /*margin-top: 15px;*/
+    /*margin-bottom:15px;*/
+    /*margin-left: 15px;*/
+    /*margin-right: 15px;*/
+    /*height: 45%;*/
+    /*background-color: #5c636a;*/
+    padding: 20px 20px 20px;
+
+}
+
+
+.address {
+    margin: 10px 20px 20px 20px;
+    /*width: 50%;*/
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*.col div.email {*/
+/*    margin-left: 10vw;*/
+/*}*/
+
+.email {
+    margin: 10px 20px 20px 20px;
+    /*width: 50%;*/
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.callus {
+    margin: 10px 20px 20px 20px;
+    /*width: 50%;*/
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*.col div.social-block {*/
+/*    margin-left: 10vw;*/
+/*}*/
+
+.loc,.mail,.phones {
+    margin: 10px auto;
+    text-align: start;
+    justify-content: space-around;
+    /*align-items:*/
+}
+
+/*div.col-md-6 div.address, div.social-block {*/
+/*    margin-top: 20px;*/
+/*    margin-bottom:20px;*/
+/*    margin-left: 20px;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*div.col-md-4 div.email, div.callus {*/
+/*    margin-top: 20px;*/
+/*    margin-bottom:20px;*/
+/*    margin-left: 20px;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+.maps-block {
+    width: 100%;
+    height: 450px;
+    margin: 10px 10px;
+}
+
+.maps-block div.maps-container {
+    margin-top: 20px;
+    height:fit-content;
+
+}

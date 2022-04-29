@@ -1,0 +1,63 @@
+
+@import 'blocks/modal.css';
+@import 'blocks/contactsBlock.css';
+@import 'blocks/content.css';
+@import 'blocks/footer.css';
+@import 'blocks/gallery.css';
+@import 'blocks/header.css';
+@import 'blocks/swiper.css';
+@import 'blocks/object.css';
+@import 'blocks/verticalSlider.css';
+@import 'blocks/adaptive.css';
+@import 'blocks/navbar.css';
+/* @import 'blocks/testPage.css'; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    background-image: url("../img/autumn52-221.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+div.container-fluid {
+    height: 100vh;
+    /*min-height: 650px;*/
+    width: 100vw;
+    position: relative;
+    padding: 0;
+    /*margin-bottom: 140px;*/
+}
+
+
+/*nav*/
+
+
+
+
+
+/*nav*/
+
+
+/*content*/
+
+
+
+/*content*/
+
+/*footer*/
+
+
+
+
+/*footer*/

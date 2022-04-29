@@ -1,0 +1,142 @@
+/* verticalSlider */
+
+
+
+.container-VS {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button.down-button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    /* height: 30px;
+    width: 30px; */
+}
+button.up-button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    /* height: 30px;
+    width: 30px; */
+}
+
+/* .up-button {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+.down-button {
+    position: absolute;
+    top: 51%;
+    left: 31%;
+} */
+
+.up-button svg {
+    height: 20px;
+    width: 20px;
+}
+.down-button svg {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+button.down-button:hover {
+    /* color: #222;
+    background-color: #0d88f0; */
+    color: #e6f755;
+    color: #FFFF00;
+    background-color: #0a0a0a;
+    /* background-color: #C0C0C0; */
+    /* background-color: #BCC6CC; */
+    /* color: #e6f755;
+    background-color: #8f8d8a; */
+}
+
+button.up-button:hover {
+    /* color: #222;
+    background-color: #0d88f0; */
+    color: #e6f755;
+    color: #FFFF00;
+    background-color: #0a0a0a;
+    /* background-color: #C0C0C0; */
+    /* background-color: #BCC6CC; */
+    /* color: #e6f755;
+    background-color: #8f8d8a; */
+}
+
+button:focus {
+    outline: none;
+}
+
+div.container-VS div.controls button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+    }
+
+.container-VS .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container-VS .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,95 @@
+/*content*/
+
+
+.content {
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+
+
+}
+
+/*carousel*/
+
+.container.slider {
+    height: 70vh;
+    width: 68vw;
+}
+
+.container.slider.tab {
+    height:500px;
+    width:80%;
+}
+.carousel-inner {
+    border-radius: 25px;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #18180c;
+    text-align: center;
+}
+
+
+/*carousel*/
+
+/* slider -VS*/
+
+
+
+/* slider-VS */
+
+/*Tab*/
+
+/* object */
+
+
+/* object */
+
+
+/*gallery*/
+
+
+/*gallery*/
+
+/*Tab*/
+
+/*accordion*/
+
+.container .style-accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width:822px;
+    display: contents;
+}
+
+.accordion-item {
+    background: transparent;
+}
+
+.accordion-button {
+    background-color: transparent;
+}
+.accordion-item:first-of-type .accordion-button {
+    background-color: transparent;
+}
+
+
+/*accordion*/
+
+
+/*contact bloc*/
+
+/*contact bloc*/
+
+/*content*/
