@@ -271,7 +271,7 @@ i.bi.bi-x-circle {
 } */
 
 
-@media (width < 768px ) {
+@media screen and (max-width: 768px ) {
     
     .close-vmodal > svg {
         position: fixed;

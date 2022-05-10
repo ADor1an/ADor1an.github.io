@@ -10,6 +10,8 @@
 @import 'blocks/verticalSlider.css';
 @import 'blocks/adaptive.css';
 @import 'blocks/navbar.css';
+@import 'blocks/accordion.css';
+@import 'blocks/qa.css';
 /* @import 'blocks/testPage.css'; */
 
 *{

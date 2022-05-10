@@ -179,7 +179,7 @@ a.hover-link {
     height: 11%;
 }
 
-@media (width < 1149px) {
+@media (max-width: 1149px) {
 
     div.col-md-1.indent-right {
         max-width:80vw;
@@ -205,7 +205,7 @@ a.hover-link {
 
 }
 
-@media (width < 895px ) {
+@media (max-width: 895px ) {
 
     img.obj-img {
         vertical-align: top;
@@ -216,7 +216,7 @@ a.hover-link {
 
 }
 
-@media (width < 768px) {
+@media (max-width: 768px) {
 
     div.col-md-8.col-10 {
         width: 100vw;
@@ -323,7 +323,7 @@ a.hover-link {
     }
 }
 
-@media (width < 699px) {
+@media (max-width: 699px) {
 
     /* div.tab-pane.fade.active.show {
         display: grid;
@@ -365,7 +365,7 @@ a.hover-link {
 
 }
 
-@media (width < 400px) {
+@media (max-width: 400px) {
 
     .tab-content > .active {
         display: grid;

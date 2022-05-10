@@ -338,7 +338,7 @@ ul.dropdown-menu {
     background-color: #e9cd57;
 }
 
-@media (width < 768px) {
+@media screen and (max-width: 768px) {
 
     .dropdown:hover .dropdown-menu {
         display: block;

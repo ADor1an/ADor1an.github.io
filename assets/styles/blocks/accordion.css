@@ -1,0 +1,75 @@
+
+/* accordion */
+
+
+.container.style-accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* max-width: 100%; */
+}
+
+.accordion {
+    width:9;
+    display: fit-contents;
+}
+
+.accordion-item {
+    background: transparent;
+    width:80vw;
+}
+
+
+.accordion-item:first-of-type .accordion-button.collapsed {
+    background-color: transparent;
+}
+.accordion-item:first-of-type .accordion-button {
+    background-color: bisque;
+}
+
+h2.accordion-header {
+    background-color: rgb(208, 231, 103);
+    color:black;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: bisque;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    width: 80vw;
+}
+
+div.accordion-item > h2 {
+    margin: 0 auto;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    /* transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; */
+  } 
+
+@media screen and  (max-width: 569px) {
+    
+
+    div.accordion-body {
+        font-size: 14px;
+    }
+    div.accordion-body strong {
+        font-size: 16px;
+    }
+
+
+}

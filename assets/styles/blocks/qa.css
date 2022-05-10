@@ -1,0 +1,25 @@
+/* qa */
+
+.container-qa {
+    margin: 0 auto;
+    
+}
+.qa-text {
+    text-align: center;
+    padding: 0 10vw;
+}
+
+
+@media screen and (max-width: 569px) {
+
+.container-qa {
+    margin-top: -3vh;
+}
+
+.qa-text > p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+    
+}
+

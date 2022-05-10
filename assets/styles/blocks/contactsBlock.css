@@ -136,6 +136,117 @@
 
 .maps-block div.maps-container {
     margin-top: 20px;
-    height:fit-content;
+    height: fit-content;
+}
+
+@media screen  and ( max-width: 768px) {
+
+    
+    div.contact-block {
+        width: 100%;
+        height: 35vh;
+        /* margin: 30px 30px 10px 30px; */
+        margin: 30px 30px 10px;
+        background: #5c636a;
+        }
+    
+        .contact-block button {
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: solid 1px #dad87d;
+            border-radius: 25px;
+            margin: 5px 25px;
+        }
+    
+        .contact-block button svg {
+            width: 25px;
+            height: 25px;
+        }
+    
+        .contact-block div.col {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            margin: 5px;
+            padding: 5px 5px 5px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+        }
+        /* .contact-block div.col {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            margin: 7px;
+            padding: 5px 5px 5px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+        } */
+        .address {
+            margin: 5px 5px 5px 5px;
+            /* width: 50%; */
+            height: 15vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .email {
+            margin: 5px 5px 5px 5px;
+            /* width: 50%; */
+            height: 15vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .callus {
+            margin: 5px 5px 5px 5px;
+            /* width: 50%; */
+            height: 15vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .social-block {
+            margin: 5px 5px 5px 5px;
+            /* width: 50%; */
+            height: 15vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .maps-block {
+            width: 100%;
+            height: 55vh;
+            padding: 20px 20px;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;    
+            display:flex;
+            /* margin: 0; */
+        }
+    
+        .maps-block div.maps-container {
+            margin: 0 auto;
+            width: 100%;
+            margin-bottom: 5vh;
+    
+        }
+    
+        iframe {
+            border: 0;
+            height: 50vh;
+            padding-bottom: 10vh;
+            width: 100%;
+        }
 
 }
+    

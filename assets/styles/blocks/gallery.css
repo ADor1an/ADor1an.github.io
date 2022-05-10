@@ -100,7 +100,10 @@
         transition: opacity .3s ease-in .4s;
     }
 
-@media (width < 768px) {
+@media screen and (max-width: 768px) {
+
+
+    
 
     .indent-gallery-par {
         margin: 0 auto;
