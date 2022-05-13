@@ -482,7 +482,12 @@ padding-left: 2rem;
       margin: 0;
     }
 
-    li.nav-item.show {
+    li.nav-item.fade.show {
+      margin: 0;
+    }
+
+
+    li.nav-item {
       margin: 0;
     }
 
@@ -511,7 +516,23 @@ padding-left: 2rem;
       opacity: 1;
       z-index: 1020;
       margin: 0 0 5vh 0;
+    }   
+    
+    li.nav-item.fade:hover {
+      margin: 0;
     }
+    
+    li.nav-item.fade.show {
+      margin: 0;
+    }
+
+    li.nav-item.fade > a.nav-link.dropdown-toggle.show {
+      /* opacity: 1;
+      z-index: 1020; */
+      margin: 0;
+    }
+
+
 
     .collapsed-menu {
       position: fixed;
@@ -528,6 +549,10 @@ padding-left: 2rem;
       bottom: 0;
       right: 0;
       /* transition-delay: 140s; */
+    }
+
+    .nav-link.dropdown-toggle.show {
+
     }
 
   }

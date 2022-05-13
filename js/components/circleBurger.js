@@ -28,3 +28,11 @@ btnHam.addEventListener('click', () => {
 
 
   })
+
+const navLink = document.querySelector('.nav-link')
+const navItem = document.querySelector('.nav-item')
+
+
+navItem.addEventListener('click', () => {
+    navItem.classList.toggle('show')
+})
