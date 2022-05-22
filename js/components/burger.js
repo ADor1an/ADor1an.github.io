@@ -7,11 +7,11 @@
 
 
 
-const btnHam = document.querySelector('.js-hamburger')
+// const btnHam = document.querySelector('.js-hamburger')
 
-btnHam.addEventListener('click', () => {
+// btnHam.addEventListener('click', () => {
 
-    btnHam.classList.toggle('is-active')
+//     btnHam.classList.toggle('is-active')
 
 // if (btnHam.classList.contains('is-active')){
 //     btnHam.classList.remove('is-active')
@@ -39,37 +39,68 @@ btnHam.addEventListener('click', () => {
 // for fullscreen menu
 
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+// const hamburger = document.querySelector(".hamburger");
+// const navLinks = document.querySelector(".nav-links");
+// const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener("click", () => {
-
-
-
-  navLinks.classList.toggle("open");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
-});
+// hamburger.addEventListener("click", () => {
 
 
 
-const navLink = document.querySelector('.nav-link')
-const navItem = document.querySelector('.nav-item')
+//   navLinks.classList.toggle("open");
+//   links.forEach(link => {
+//     link.classList.toggle("fade");
+//   });
+// });
 
 
-navItem.addEventListener('click', () => {
-    // navItem.classList.add('show')
-    // navLink.classList.remove('show')
+// const navbar = document.querySelectorAll('.navbar-nav')
+// const navLink = document.querySelector('.nav-link')
+// const navItem = document.querySelector('.nav-item')
 
-    if (event.target === navItem) {
-      navItem.classList.toggle('show')
-    } else {
-      // navItem.classList.remove('show')
 
-    }
-})
+// console.log(navbar);
+
+// navItem.addEventListener('click', event => {
+//     // navItem.classList.add('show')
+//     // navLink.classList.remove('show')
+//     console.log(event.target);
+
+//     if (event.target == navItem) {
+//       navItem.classList.add('show')
+      
+//     } else {
+//       navItem.classList.remove('show')
+      
+//     }
+// })
+
+
+
+
+
+
+
+
+// navbar.addEventListener('click', navbarListener)
+
+// const navbarListener = event => {
+//   if (event.target === navLink 
+//     || event.target === navItem
+//     ) {
+//     navItem.classList.add('show')
+//     // navLink.classList.remove('show')
+    
+  
+    
+//   } else {
+//     navItem.classList.remove('show')
+    
+//   }
+// }
+
+
+
 
 
 

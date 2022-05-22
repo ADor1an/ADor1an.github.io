@@ -366,13 +366,11 @@ ul.dropdown-menu {
 @media screen and (max-width: 768px) {
 
     .dropdown:hover .dropdown-menu {
-        display: block;
+        position: inherit;
+        /* display: block;
         visibility: visible;
         z-index: 5;
-        background-color: #2121217d!important;
-        /* position: absolute; */
-        position: inherit;
-        /* left: 50%; */
+        background-color: #2121217d!important; */
     
     }
 /* 

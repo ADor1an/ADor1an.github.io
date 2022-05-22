@@ -195,6 +195,14 @@ button.hamburger {
     /* justify-content:center; */
     z-index: 20;
 }
+
+.dropdown-menu.hide {
+  display: none;
+  visibility: hidden;
+  z-index: -1030;
+  background-color: transparent;
+  position: unset;
+}
   
   /* bootstrap styles */
   
@@ -478,9 +486,9 @@ padding-left: 2rem;
       margin: 0 0 5vh 0;
     }
 
-    li.nav-item.fade:hover {
+    /* li.nav-item.fade:hover {
       margin-bottom: 2vh;
-    }
+    } */
 
     li.nav-item.fade.show {
       margin-bottom: 2vh;
@@ -547,9 +555,9 @@ padding-left: 2rem;
       /* transition-delay: 140s; */
     }
 
-    .nav-link.dropdown-toggle.show {
+    /* .nav-link.dropdown-toggle.show {
 
-    }
+    } */
 
   }
 

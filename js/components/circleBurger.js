@@ -14,6 +14,10 @@ const btnHam = document.querySelector('.js-hamburger')
 
 const collapsedMenu = document.querySelector('.collapsed-menu')
 
+const navLink = document.querySelector('.nav-link')
+
+const dropdowns = document.querySelectorAll('.dropdown-menu')
+
 const menuLinks = document.querySelectorAll('.nav-item')
 
 btnHam.addEventListener('click', () => {
@@ -27,12 +31,30 @@ btnHam.addEventListener('click', () => {
     });
 
 
+
   })
 
-const navLink = document.querySelector('.nav-link')
-const navItem = document.querySelector('.nav-item')
+  // navLink.addEventListener('click', () => {
+
+  //   // dropdown.classList.toggle('show')
+  //   // navLink.classList.toogle('show')
+
+  //   dropdowns.forEach(item => {
+
+  //     item.classList.remove('show')
+
+  //     item.classList.add('hide')
+
+  //     console.log(item);
+  //   })
+
+  // })
 
 
-navItem.addEventListener('click', () => {
-    navItem.classList.toggle('show')
-})
+
+  
+
+
+// navItem.addEventListener('click', () => {
+//     navItem.classList.toggle('show')
+// })
