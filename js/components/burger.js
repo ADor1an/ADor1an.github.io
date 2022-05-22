@@ -60,7 +60,16 @@ const navItem = document.querySelector('.nav-item')
 
 
 navItem.addEventListener('click', () => {
-    navItem.classList.toggle('show')
-    navLink.classList.remove('show')
+    // navItem.classList.add('show')
+    // navLink.classList.remove('show')
+
+    if (event.target === navItem) {
+      navItem.classList.toggle('show')
+    } else {
+      // navItem.classList.remove('show')
+
+    }
 })
+
+
 

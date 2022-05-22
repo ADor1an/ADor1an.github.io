@@ -185,7 +185,7 @@ button.hamburger {
     justify-content: flex-start;
     align-content: center;
     z-index: 20;
-    flex-grow: 1;
+    flex-grow: 0;
     padding: 0 5vw;
 
     
@@ -475,15 +475,15 @@ padding-left: 2rem;
     li.nav-item.fade {
       opacity: 1;
       z-index: 1020;
-      margin: 0 0 12vh 0;
+      margin: 0 0 5vh 0;
     }
 
     li.nav-item.fade:hover {
-      margin: 0;
+      margin-bottom: 2vh;
     }
 
     li.nav-item.fade.show {
-      margin: 0;
+      margin-bottom: 2vh;
     }
 
 
@@ -517,19 +517,15 @@ padding-left: 2rem;
       z-index: 1020;
       margin: 0 0 5vh 0;
     }   
-    
-    li.nav-item.fade:hover {
-      margin: 0;
-    }
-    
+        
     li.nav-item.fade.show {
-      margin: 0;
+      margin-bottom: 2vh;
     }
 
     li.nav-item.fade > a.nav-link.dropdown-toggle.show {
       /* opacity: 1;
       z-index: 1020; */
-      margin: 0;
+      /* margin: 0; */
     }
 
 

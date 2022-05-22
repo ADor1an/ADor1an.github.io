@@ -12,9 +12,9 @@
 
 /*carousel*/
 
-.container.slider {
-    height: 70vh;
-    width: 68vw;
+.container.slider {    
+    height: 80vh;
+    width:  90vw;
 }
 
 .container.slider.tab {
@@ -84,6 +84,65 @@
     background-color: transparent;
 }
 
+
+@media  screen and (max-height: 950px) {
+
+    .container.slider {
+        height: 80vh;
+        width: 95vw;
+    }
+    
+}
+
+
+
+@media  screen and (max-height: 850px) {
+
+    .container.slider {
+        height: 80vh;
+        width: 90vw;
+    }
+    
+}
+
+@media  screen and (max-width: 1440px) {
+
+    .container.slider {
+        height: 85vh;
+        width: 90vw;
+    }
+    .content {
+        padding-top: 11vh;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    img.img-slide { 
+        /* width: 100%;
+        height: 100%; */
+    }
+
+    img.d-block.w-100 {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .carousel-item {
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 60vh;
+    }
+
+    div.carousel-caption.d-none.d-md-block {
+        position: absolute;
+        top: 65%;
+    }
+}
 
 /*accordion*/
 

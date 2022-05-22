@@ -375,14 +375,14 @@ ul.dropdown-menu {
         /* left: 50%; */
     
     }
-
+/* 
     .navbar-brand {
         display: flex;
         justify-content:flex-start;
         align-content: center;
         z-index: 20;
-        flex-grow: 1;
-    }
+        flex-grow: 0;
+    } */
 
     .navbar-light .nav-item:active .nav-link {
         border-color: #dcc874;
