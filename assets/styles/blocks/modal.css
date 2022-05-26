@@ -1,7 +1,9 @@
 
 /* Modal */
 
-.vmodal {}
+.vmodal {
+    margin-top: 10vh;
+}
 
 .vmodal.open .vmodal-overlay,
 .vmodal.open .vmodal-window {

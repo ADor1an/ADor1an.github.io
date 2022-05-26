@@ -5,12 +5,14 @@
     .indent-gallery-par {
         /* margin: -2vw 5vw 0 5vw; */
         /* margin: 0 auto; */
+        position: absolute;
+        top: 0;
 
     }
 
     .indent-gallery {
         /* margin: 0 auto; */
-        margin-top: -3rem;
+        /* margin-top: -3rem; */
     }
     .bodyContainer {
         font-family: 'Muli', sans-serif;
@@ -25,7 +27,7 @@
         font-family: 'Muli', sans-serif;
         overflow: hidden;
         margin: 0;
-        height: 90vh;
+        height: 100vh;
         width: inherit;
         justify-content: center;
         align-items: center;
@@ -33,7 +35,7 @@
 
     .container-gallery{
         display: flex;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     div#nav-tabContent.tab-content {
@@ -65,7 +67,7 @@
     }
 
     .galleryItem {
-        height: 80vh;
+        height: 99vh;
         border-radius:20px;
         margin: 10px;
         cursor: pointer;
@@ -103,10 +105,22 @@
 @media screen and (max-width: 768px) {
 
 
+    .content {
+        /* padding-top: 10rem; */
+        padding-top: 5vh;
+        height: 100%;
+    }
+
     
+    .indent-gallery {
+        /* margin: 0 auto; */
+        margin-top:0;
+    }
 
     .indent-gallery-par {
         margin: 0 auto;
+        position: absolute;
+        top: 4vh;
 
     }
 
@@ -121,7 +135,7 @@
     }
 
     .galleryItem {
-        height: 5vh;
+        height: 6vh;
         border-radius:20px;
         margin: 10px;
         cursor: pointer;
@@ -147,7 +161,7 @@
 
     .galleryItem.active {
         flex: 10;
-        height: 60vh;
+        height: 64vh;
         /*width: 80vw;*/
     }
 
@@ -156,4 +170,8 @@
         opacity: 1;
         transition: opacity .3s ease-in .4s;
     }
+
+    .bodyContainer {
+        height: 90vh;        
+}
 }

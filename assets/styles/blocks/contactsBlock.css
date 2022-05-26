@@ -1,4 +1,8 @@
 
+.contacts-container{
+    padding-top: 5vh;
+}
+
 .content div.container-fluid {
     width:100% ;
     margin-right: 10px;
@@ -140,6 +144,10 @@
 }
 
 @media screen  and ( max-width: 768px) {
+
+    .contacts-container{
+        padding-top: -7rem;
+    }
 
     
     div.contact-block {
