@@ -4,9 +4,11 @@
 .content {
     align-items: center;
     flex-wrap: nowrap;
+    position: absolute;
+    top: 12vh;
     /* padding-top: 5vh; */
-    padding-bottom: 5vh;
-    margin-top: 10vh;
+    /* padding-bottom: 5vh;
+    margin-top: 10vh; */
 
 
 }
@@ -33,7 +35,7 @@
 .container.slider {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -42,7 +44,9 @@
     justify-content: space-around;
     flex-direction: column;
     max-width: 100%;
+    padding: 0;
 }
+
 .img-fluid {
     max-width: 100%;
     height: 100vh;
@@ -53,7 +57,7 @@
     width:80%;
 }
 .carousel-inner {
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 .carousel-caption {
@@ -163,6 +167,7 @@
         width: 100vw;
     }
     
+    
 }
 
 
@@ -206,6 +211,15 @@
 
 
 @media screen and (max-width: 768px) {
+
+    .content {
+        /* position: absolute;
+        top: 12vh; */
+    }
+
+    .content.d-flex.flex-row > .row.justify-content-around >.col-md-10.justify-content-center {
+        margin: 0 auto;
+    }
     
     img.img-slide { 
         /* width: 100%;
@@ -223,6 +237,9 @@
         display: none;
         width: 100%;
         height: 60vh;
+    }
+    .carousel-inner {
+        border-radius: 25px;
     }
 
     div.carousel-caption.d-none.d-md-block {

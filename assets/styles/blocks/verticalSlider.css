@@ -172,8 +172,11 @@ div.container-VS div.controls button {
     }
 
     .content {
+            position: absolute;
+            top: 12vh;
+        
         /* padding-top: 10rem; */
-        padding-top: 7rem;
+        /* padding-top: 7rem; */
         /* height: 100%; */
     }
     .container.slider {
@@ -181,6 +184,7 @@ div.container-VS div.controls button {
         /* width: auto; */
         width: 100vw;
         padding: 0 10px;
+        position: fixed;
         /* margin: 0 auto; */
     }
 

@@ -2,7 +2,7 @@
 /* Modal */
 
 .vmodal {
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
 }
 
 .vmodal.open .vmodal-overlay,
@@ -276,21 +276,32 @@ i.bi.bi-x-circle {
 @media screen and (max-width: 768px ) {
     
     .close-vmodal > svg {
-        position: fixed;
+        /* position: fixed;
         border-radius: 50%;
         top: inherit;
         left: inherit;
         height: 60px;
         width: 60px;
-        padding: 3px;
+        padding: 3px; */
         /* margin: 0; */
+    }
+
+    .close-vmodal > svg {
+        position: absolute;
+        border-radius: 50%;
+        top: 0%;
+        left: 0%;
+        height: 60px;
+        width: 60px;
+        padding: 3px;
+        margin: 0;
     }
     .close-vmodal.active {
         position: absolute;
         z-index: 1030;
         /* transform: translateX(0px) translateY(0px); */
         left: 45%;
-        top: 91%;
+        top: 98%;
         /* opacity: 0;
     }
     }

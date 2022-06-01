@@ -1,11 +1,13 @@
 /* Adaptive */
 
 
-@media screen (min-width:256px) and (max-width:1036px) {
+@media screen (max-width:1036px) {
 
     .content {
+        display: flex;
         align-items: center;
         flex-wrap: nowrap;
+
         padding-top: 20vh;
         /* padding-bottom: 15vh; */
     }

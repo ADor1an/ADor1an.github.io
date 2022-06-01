@@ -1,14 +1,14 @@
 
+@import 'blocks/content.css';
+@import 'blocks/adaptive.css';
 @import 'blocks/modal.css';
 @import 'blocks/contactsBlock.css';
-@import 'blocks/content.css';
 @import 'blocks/footer.css';
 @import 'blocks/gallery.css';
 @import 'blocks/header.css';
 @import 'blocks/swiper.css';
 @import 'blocks/object.css';
 @import 'blocks/verticalSlider.css';
-@import 'blocks/adaptive.css';
 @import 'blocks/navbar.css';
 @import 'blocks/accordion.css';
 @import 'blocks/qa.css';
