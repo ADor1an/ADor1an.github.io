@@ -48,7 +48,7 @@ btnHam.addEventListener('click', () => {
 // }
 //
 //   dropItem.addEventListener('click', () => {
-//     if (dropItem.classList.contains('show')) {
+//     if (dropItem.classList.contains('show') && dropMenu.classList.contains('show')) {
 //
 //       dropItem.classList.remove('show')
 //       dropMenu.classList.remove('show')
@@ -56,6 +56,7 @@ btnHam.addEventListener('click', () => {
 //     } else {
 //
 //       dropItem.classList.add('show')
+//         dropMenu.classList.add('show')
 //
 //     }
 //

@@ -22,7 +22,7 @@
                     <span class="hamburger-inner "></span>
                 </span>
             </button>
-            
+
             <div class="collapsed-menu">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
@@ -36,7 +36,7 @@
                             <li><a class="dropdown-item" href="./pages/partners.html">Партнери</a></li>
                             <li><a class="dropdown-item" href="./pages/dirsword.html">Слово Директора</a></li>
                             <li><a class="dropdown-item" href="./pages/objects.html">Об'єкти</a></li>
-        
+
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -59,7 +59,7 @@
                             <li><a class="dropdown-item" href="./pages/q&a.html">Q&A</a></li>
                         </ul>
                     </li>
-        
+
                     <li class="nav-item feedback-link">
                         <button class="botButton btn-feedback" data-bs-toggle="modal" data-bs-target="#modal-feedback" >
                             <i class="bi bi-telephone-forward"></i>
@@ -72,41 +72,47 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="telegram.php" method="POST">
-            
+                                        <form id="form" >
+
                                             <div class="input-group mb-3">
-                                                <input type="name" name="user_name" class="form-control" placeholder="Ім'я" aria-label="Name">
-            
+                                                <input type="name" name="user_name" id="name" class="form-control" placeholder="Ім'я" aria-label="Name">
+
                                             </div>
                                             <div class="input-group mb-3">
-                                                <input type="email" name="user_email" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
+                                                <input type="email" name="user_email" id="email" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
                                                 <span class="input-group-text" id="basic-addon2">email@.com:</span>
                                             </div>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text" id="basic-addon1">
                                                     <i class="bi bi-telephone-forward"></i>
                                                 </span>
-                                                <input type="tel" name="user_phone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
+                                                <input type="tel" name="user_phone" id="phone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
                                             </div>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text" id="basic-addon1">@</span>
-                                                <input type="telegramUserName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
+                                                <input type="telegramUserName" id="tgUsName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
                                             </div>
                                             <div class="input-group">
                                                 <span class="input-group-text">Ваше  повідомлення: </span>
-                                                <textarea name="user-message" class="form-control"  aria-label="With textarea"></textarea>
+                                                <textarea name="user-message" id="user-message" class="form-control"  aria-label="With textarea"></textarea>
                                             </div>
+
+                                          <div class="submit-wrapper">
+                                              <button type="submit" class="btn btn-primary">Send</button>
+                                          </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
                                         <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                        <button type="submit" class="btn ">Send</button>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </li>       
-        
+
+
+                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -115,7 +121,7 @@
 
     <div class="content d-flex flex-row justify-content-center ">
         <!-- <div class="row justify-content-around">
-        
+
 
 
         </div> -->
@@ -200,7 +206,7 @@
             <button type="button" class="btn btn-info btn-lang">UA</button>
             <button type="button" class="btn btn-info btn-lang">RU</button>
         </div>
-    
+
         <div class="section">
         <div class="footer-block">
             <div class="footer-nav">
@@ -224,7 +230,7 @@
             </div>
         </div>
         <a href="#" class="footer-btn" >
-            <span class="btn-icon-foot"> 
+            <span class="btn-icon-foot">
                 <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ar-sh" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
                 </svg>
@@ -236,13 +242,13 @@
                     </svg>
             </span>
         </a>
-        
+
         </div>
-        
+
     </div>
 
-    
-    
+
+
 </div>
 
 
@@ -253,8 +259,11 @@
 <script src="./js/components/footerBtn.js"></script>
 <script src="./js/botModal.js"></script>
 <!-- <script src="./js/components/burger.js"></script> -->
-<script src="../js/components/circleBurger.js"></script>
+<script src="./js/components/circleBurger.js"></script>
 <!-- <script src="./js/main.js"></script> -->
+<script src="./js/components/telegramBot.js"></script>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
