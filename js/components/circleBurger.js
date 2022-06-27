@@ -34,6 +34,44 @@ btnHam.addEventListener('click', () => {
 
   })
 
+// try to fix .show drop-toggle on mobile
+//   const dropItem = document.querySelector('.dropdown-toggle').classList.contains('show')
+//   const dropMenu = document.querySelector('.dropdown-menu').classList.contains('show')
+//
+// console.log(dropItem);
+// console.log(dropMenu);
+//
+// function removeClassShow(){
+//
+//
+//
+// }
+//
+//   dropItem.addEventListener('click', () => {
+//     if (dropItem.classList.contains('show')) {
+//
+//       dropItem.classList.remove('show')
+//       dropMenu.classList.remove('show')
+//
+//     } else {
+//
+//       dropItem.classList.add('show')
+//
+//     }
+//
+//   })
+//
+//
+//     dropItem.addEventListener('click', () => {
+//
+//
+//     })
+
+
+// try to fix .show drop-toggle on mobile
+
+
+
   // navLink.addEventListener('click', () => {
 
   //   // dropdown.classList.toggle('show')
@@ -52,7 +90,7 @@ btnHam.addEventListener('click', () => {
 
 
 
-  
+
 
 
 // navItem.addEventListener('click', () => {
