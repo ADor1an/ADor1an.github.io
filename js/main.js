@@ -1,14 +1,6 @@
 
-import burger from "./components/burger.js"
+import $ from './lib/core'
 
 
 
-window.addEventListener('DOMContentLoaded', () => {
-    "use strict"
-
-
-    burger('.js-hamburger')
-
-
-
-})
+$('div');
