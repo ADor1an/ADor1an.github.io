@@ -9,6 +9,7 @@
     <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet" >
     <link href="../assets/img/favicon.png" rel="icon" >
     <link rel="stylesheet" href="../assets/styles/main.css">
+    <!-- <link rel="stylesheet" href="../assets/styles/newSwiper.css"> -->
 
 
     <title>Слово Директора</title>
@@ -18,7 +19,6 @@
 
 <div class="container-fluid mb-5">
 
-    <div class="swiper">
 
         <div class="col-md-12 navigate row">
             <div class="fixed-top indent-nav">
@@ -72,50 +72,49 @@
                             </button>
                         </li>
                         <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered">
-                                  <div class="modal-content">
-                                      <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                          <form id="form" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="form" >
 
-                                              <div class="input-group mb-3">
-                                                  <input type="name" name="user_name" id="name" class="form-control" placeholder="Ім'я" aria-label="Name">
+                                            <div class="input-group mb-3">
+                                                <input type="name" name="user_name" id="name" class="form-control" placeholder="Ім'я" aria-label="Name">
 
-                                              </div>
-                                              <div class="input-group mb-3">
-                                                  <input type="email" name="user_email" id="email" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
-                                                  <span class="input-group-text" id="basic-addon2">email@.com:</span>
-                                              </div>
-                                              <div class="input-group mb-3">
-                                                  <span class="input-group-text" id="basic-addon1">
-                                                      <i class="bi bi-telephone-forward"></i>
-                                                  </span>
-                                                  <input type="tel" name="user_phone" id="phone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
-                                              </div>
-                                              <div class="input-group mb-3">
-                                                  <span class="input-group-text" id="basic-addon1">@</span>
-                                                  <input type="telegramUserName" id="tgUsName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
-                                              </div>
-                                              <div class="input-group">
-                                                  <span class="input-group-text">Ваше  повідомлення: </span>
-                                                  <textarea name="user-message" id="user-message" class="form-control"  aria-label="With textarea"></textarea>
-                                              </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="email" name="user_email" id="email" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
+                                                <span class="input-group-text" id="basic-addon2">email@.com:</span>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">
+                                                    <i class="bi bi-telephone-forward"></i>
+                                                </span>
+                                                <input type="tel" name="user_phone" id="phone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="telegramUserName" id="tgUsName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Ваше  повідомлення: </span>
+                                                <textarea name="user-message" id="user-message" class="form-control"  aria-label="With textarea"></textarea>
+                                            </div>
 
                                             <div class="submit-wrapper">
-                                                <button type="submit" class="btn btn-primary">Send</button>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                </div>
                                             </div>
-                                          </form>
-                                      </div>
-                                      <div class="modal-footer">
-                                          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                                        </form>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
 
 
                     </ul>
@@ -125,103 +124,181 @@
         </div>
 
 
+
+
+<div class="swiper">
+
+
+    <div class="parallax-bg" style="background-image: url(https://images.unsplash.com/photo-1641911470539-59661812d315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80)"  data-swiper-parallax="-40%">
+    </div>
+
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide first-slide">
-                               <img src="../assets/img/carousel/ph4.jpg" alt="">
-                <div class="container">
-                    <div class="row text-content">
-                        <div class="col-2"> </div>
-                        <div class="col-8">
-                            <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, nemo!</span>
-                        </div>
-                        <div class="col-2"> </div>
+            <div class="swiper-slide" role="group" aria-label="1 / 6">
+                <img class="swiper-slide-image" data-swiper-parallax="5%"  src="../assets/img/carousel/ph1.1.jpg" alt="">
+
+                <div class="swiper-slide-content">
+                    <div class="title"  data-swiper-parallax="-50">Slider 1 </div>
+
+                    <div class="subtitle" data-swiper-parallax="-20%">Subtitle</div>
+                    
+                    <div class="swiper-slide-text text" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum commodi voluptatem doloribus, reprehenderit nemo!</p>
                     </div>
+                    <!-- <div data-swiper-parallax-opacity="0.8">I will change opacity</div>
+                    <div data-swiper-parallax-scale="0.6">I will change scale</div> -->
+    
                 </div>
+                
             </div>
 
-            <div class="swiper-slide second-slide">
-                               <img src="../assets/img/carousel/ph5.jpg" alt="">
-                <div class="container">
-                    <div class="row text-content">
-                        <div class="col-2"> </div>
-                        <div class="col-8">
-                            <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, nemo!</span>
-                        </div>
-                        <div class="col-2"> </div>
+
+            <div class="swiper-slide" role="group" aria-label="2 / 6">
+                <img class="swiper-slide-image" data-swiper-parallax="5%"  src="../assets/img/carousel/ph2.1.jpg" alt="">
+
+                <div class="swiper-slide-content">
+                    <div class="title"  data-swiper-parallax="-50">Slider 2 </div>
+
+                    <div class="subtitle" data-swiper-parallax="-60">Subtitle</div>
+                    
+                    <div class="text" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum commodi voluptatem doloribus, reprehenderit nemo!</p>
                     </div>
+                    <!-- <div data-swiper-parallax-opacity="0.8">I will change opacity</div>
+                    <div data-swiper-parallax-scale="0.6">I will change scale</div> -->
+    
                 </div>
+                
             </div>
 
-            <div class="swiper-slide third-slide">
-                               <img src="../assets/img/carousel/ph6.jpg" alt="">
-                <div class="container">
-                    <div class="row text-content">
-                        <div class="col-2"> </div>
-                        <div class="col-8">
-                            <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, nemo!</span>
-                        </div>
-                        <div class="col-2"> </div>
+            <div class="swiper-slide" role="group" aria-label="3 / 6">
+                <img class="swiper-slide-image" data-swiper-parallax="5%"  src="../assets/img/carousel/ph3.1.jpg" alt="">
+
+                <div class="swiper-slide-content">
+                    <div class="title"  data-swiper-parallax="-50">Slider 3 </div>
+
+                    <div class="subtitle" data-swiper-parallax="-60">Subtitle</div>
+                    
+                    <div class="swiper-slide-text text" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum commodi voluptatem doloribus, reprehenderit nemo!</p>
                     </div>
+                    <!-- <div data-swiper-parallax-opacity="0.8">I will change opacity</div>
+                    <div data-swiper-parallax-scale="0.6">I will change scale</div> -->
+    
                 </div>
+                
             </div>
+
+            <div class="swiper-slide" role="group" aria-label="4 / 6">
+                <img class="swiper-slide-image" data-swiper-parallax="5%"  src="../assets/img/carousel/ph4.1.jpg" alt="">
+
+                <div class="swiper-slide-content">
+                    <div class="title"  data-swiper-parallax="-50">Slider 4 </div>
+
+                    <div class="subtitle" data-swiper-parallax="-60">Subtitle</div>
+                    
+                    <div class="swiper-slide-text text" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum commodi voluptatem doloribus, reprehenderit nemo!</p>
+                    </div>
+                    <!-- <div data-swiper-parallax-opacity="0.8">I will change opacity</div>
+                    <div data-swiper-parallax-scale="0.6">I will change scale</div> -->
+    
+                </div>
+                
+            </div>
+
+            <div class="swiper-slide" role="group" aria-label="5 / 6">
+                <img class="swiper-slide-image" data-swiper-parallax="5%"  src="../assets/img/carousel/ph5.1.jpg" alt="">
+
+                <div class="swiper-slide-content">
+                    <div class="title"  data-swiper-parallax="-50">Slider 5 </div>
+
+                    <div class="subtitle" data-swiper-parallax="-60">Subtitle</div>
+                    
+                    <div class="swiper-slide-text text" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum commodi voluptatem doloribus, reprehenderit nemo!</p>
+                    </div>
+                    <!-- <div data-swiper-parallax-opacity="0.8">I will change opacity</div>
+                    <div data-swiper-parallax-scale="0.6">I will change scale</div> -->
+    
+                </div>
+                
+            </div>
+            <div class="swiper-slide" role="group" aria-label="6 / 6">
+                <img class="swiper-slide-image" data-swiper-parallax="5%"  src="../assets/img/carousel/ph6.1.jpg" alt="">
+
+                <div class="swiper-slide-content">
+                    <div class="title"  data-swiper-parallax="-50">Slider 6 </div>
+
+                    <div class="subtitle" data-swiper-parallax="-60">Subtitle</div>
+                    
+                    <div class="swiper-slide-text text" data-swiper-parallax="-100" data-swiper-parallax-duration="600">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum commodi voluptatem doloribus, reprehenderit nemo!</p>
+                    </div>
+                    <!-- <div data-swiper-parallax-opacity="0.8">I will change opacity</div>
+                    <div data-swiper-parallax-scale="0.6">I will change scale</div> -->
+    
+                </div>
+                
+            </div>
+
+
+
 
         </div>
 
+</div>
 
-        <div class="footer">
-
-            <div class="indent-lang fixed-bottom">
-                <button type="button" class="btn btn-info btn-lang">UA</button>
-                <button type="button" class="btn btn-info btn-lang">RU</button>
-            </div>
-
-            <div class="section">
-            <div class="footer-block">
-                <div class="footer-nav">
-                    <footer class="indent-footer">
-                        <div class="instagram soc">
-                            <a href=""><img src="../assets/bootstrap-icons/instagram.svg" alt=""></a>
-                        </div>
-                        <div class="twitter soc">
-                            <a href=""><img src="../assets/bootstrap-icons/twitter.svg" alt=""></a>
-                        </div>
-                        <div class="facebook soc">
-                            <a href=""><img src="../assets/bootstrap-icons/facebook.svg" alt=""></a>
-                        </div>
-                        <div class="youtube soc">
-                            <a href=""><img src="../assets/bootstrap-icons/youtube.svg" alt=""></a>
-                        </div>
-                        <div class="telegram soc">
-                            <a href=""><img src="../assets/bootstrap-icons/telegram.svg" alt=""></a>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-            <a href="#" class="footer-btn" >
-                <span class="btn-icon-foot">
-                    <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ar-sh" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
-                    </svg>
-                </span>
-
-                <span class="btn-icon-foot_active">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                </span>
-            </a>
-
-            </div>
-
-        </div>
-
-
-    </div>
 
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 
+    <div class="footer">
+
+        <div class="indent-lang fixed-bottom">
+            <button type="button" class="btn btn-info btn-lang">UA</button>
+            <button type="button" class="btn btn-info btn-lang">RU</button>
+        </div>
+
+        <div class="section">
+        <div class="footer-block">
+            <div class="footer-nav">
+                <footer class="indent-footer">
+                    <div class="instagram soc">
+                        <a href=""><img src="../assets/bootstrap-icons/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="twitter soc">
+                        <a href=""><img src="../assets/bootstrap-icons/twitter.svg" alt=""></a>
+                    </div>
+                    <div class="facebook soc">
+                        <a href=""><img src="../assets/bootstrap-icons/facebook.svg" alt=""></a>
+                    </div>
+                    <div class="youtube soc">
+                        <a href=""><img src="../assets/bootstrap-icons/youtube.svg" alt=""></a>
+                    </div>
+                    <div class="telegram soc">
+                        <a href=""><img src="../assets/bootstrap-icons/telegram.svg" alt=""></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <a href="#" class="footer-btn" >
+            <span class="btn-icon-foot">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ar-sh" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+            </span>
+
+            <span class="btn-icon-foot_active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+            </span>
+        </a>
+
+        </div>
+
+    </div>
 </div>
 
 
