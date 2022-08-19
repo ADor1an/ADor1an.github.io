@@ -1,12 +1,27 @@
-// import {getResource} from '..'
-
 const form = document.querySelector('#form')
+const modal = document.querySelectorAll('.modal')
+const secondModal = document.querySelector('.secondModal')
+// const $modalContent = document.querySelector('.modal-content')
+// const closeBtn = document.querySelector(`[data-submit]`)
+
 
 console.log(form)
 
 
+
+    // document.addEventListener('click', event => {
+    //     // event.preventDefault()
+    //     console.log(event.target)
+    //     if(event.target.dataset.submit || event.target.dataset.submit ) {
+    //         modalParent.close()
+    //     }
+    // })
+
+
+
     form.addEventListener('submit', event => {
         event.preventDefault()
+
 
         const name = document.getElementById('name').value
         const email = document.getElementById('email').value
@@ -28,6 +43,8 @@ console.log(form)
         api.send()
 
         console.log('Message successfully')
+        modal.classList.remove('show')
+
         // console.log(text1, text2)
     } )
 
@@ -38,6 +55,7 @@ console.log(secondForm)
 
 secondForm.addEventListener('submit', event => {
     event.preventDefault()
+
 
     const secondName = document.getElementById('secondName').value
     const secondEmail = document.getElementById('secondEmail').value
@@ -59,5 +77,35 @@ secondForm.addEventListener('submit', event => {
     api.send()
 
     console.log('Message successfully')
+    secondModal.classList.remove('show')
+
     // console.log(text1, text2)
 } )
+
+
+
+
+//
+// function modalClose() {
+//
+//     $modalContent.addEventListener('click', event => {
+//         event.preventDefault()
+//         console.log(event.target.dataset)
+//         if (event.target.dataset.submit) {
+//             modalParent.close()
+//         }
+//     })
+// }
+//     modalClose()
+//
+//
+// const modalParent =  {
+//     close() {
+//         $modal.classList.remove('show')
+//         $modal.classList.add('hide')
+//         setTimeout(() => {
+//             $modal.classList.remove('hide')
+//
+//         }, 15000)
+// }
+// }

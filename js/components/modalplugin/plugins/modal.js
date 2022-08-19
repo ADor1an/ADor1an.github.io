@@ -81,18 +81,21 @@ function _createCarousel(options) {
 
 const modalWindow = document.querySelector('.vmodal-window')
 
-function wipeScroll () {
-    modalWindow.addEventListener('scroll', () => {
-        let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight)
+// function wipeScroll () {
+//     modalWindow.addEventListener('scroll', () => {
+//         let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight)
+//
+//         if (!btnPressed && (window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)) {
+//
+//             document.querySelector(selector).click()
+//
+//
+//         }
+//     })
+// }
 
-        if (!btnPressed && (window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)) {
-
-            document.querySelector(selector).click()
 
 
-        }
-    })
-}
 
 
 
@@ -100,9 +103,10 @@ function wipeScroll () {
 $.modal = function(options) {
 
     const $modal = _createModal(options)
-    
     const btnClose = document.querySelector('.close-vmodal')
     const ANIMATION_SPEED = 350
+    const notCollapsed = document.querySelector('.not-collapsed')
+    const navBrand = document.querySelector('.navbar-brand')
     let closing = false
     let destroyed = false
 
@@ -115,6 +119,12 @@ $.modal = function(options) {
             !closing && $modal.classList.add('open')
             btnClose.style.visibility = 'visible'
             btnClose.classList.add('active')
+            navBrand.style.visibility = 'hidden'
+            notCollapsed.style.visibility = 'hidden'
+            // notCollapsed.style.cssText = `
+            // z-index: -1;
+            // `
+
             // console.log(modalWindow.scrollTop(1))
 
         },
@@ -122,6 +132,12 @@ $.modal = function(options) {
             $modal.classList.remove('open')
             $modal.classList.add('hide')
             btnClose.style.visibility = 'hidden'
+            notCollapsed.style.visibility = 'visible'
+
+            navBrand.style.visibility = 'visible'
+            // notCollapsed.style.zIndex = '10'
+
+
             // console.log(vWindow.scrollTop(0, 1));
             // console.log(modalWindow.scrollTop(0))
 

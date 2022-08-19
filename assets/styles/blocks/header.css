@@ -124,11 +124,12 @@ div#navbarSupportedContent.collapse.navbar-collapse {
 
 /*navbar-toggle*/
 .fixed-top {
-    position: fixed;
+    /*position: fixed;*/
+    position: relative;
     top: 3vh;
     right: 0;
     left: 0;
-    z-index: 1030;
+    /*z-index: 10;*/
 }
 
 

@@ -1,3 +1,29 @@
-.content {
-  position: initial;
+/*.content {*/
+/*  position: initial;*/
+/*}*/
+
+
+@media screen and (min-width: 1038px) and (max-width: 1440px) {
+  .for-modal {
+    position: absolute;
+    top: 12vh;
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1037px) {
+  .for-modal {
+    position: absolute;
+    top: -7vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .for-modal {
+    position: absolute;
+    top: -10vh;
+  }
+
+
+}
+

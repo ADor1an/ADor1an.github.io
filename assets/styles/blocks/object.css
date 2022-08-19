@@ -14,9 +14,6 @@ div.col-md-8.col-10 {
     width: 90vw;
     /* padding-left: 5vw; */
     /* height: 80vh; */
-
-
-
 }
 
 div.container-tabs{
@@ -84,7 +81,16 @@ div.tab-pane.fade.active.show {
 
 
 
+/*navbar position*/
 
+.col-md-1 .indent-right {
+    position: absolute;
+    left: 5vw;
+    top: 14vh;
+}
+
+
+/*navbar position*/
 
 a#nav-profile-tab,
 a#nav-home-tab,
@@ -266,6 +272,18 @@ a.hover-link {
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+
+
+    div.col-md-8.col-10 {
+        padding-left: 0;
+    }
+    img.obj-img {
+        width: 23vw;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     div.col-md-8.col-10 {
@@ -285,9 +303,13 @@ a.hover-link {
         /* padding: 10px; */
     }
 
-    
+    div.col-3.col-md-2 {
+        padding: 0 0 0 3vw;
+    }
+
     div#nav-tabContent.tab-content {
         margin: 0 auto;
+        padding: 5px;
     }
 
     div.tab-pane.fade.active.show {
@@ -316,7 +338,8 @@ a.hover-link {
     }
 
     a#nav-profile-tab, a#nav-home-tab, a#nav-contact-tab, .nav-link.active {
-        font-size: 20px;
+        font-size: 15px;
+        font-weight: 600;
     }
 
     .nav-tabs {
@@ -410,8 +433,8 @@ a.hover-link {
         display: grid;
         grid-template-columns: 45% 45%;
         grid-template-rows: 33% 33% 33%;
-        grid-column-gap: 20px;;
-        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
         justify-items: stretch;
         align-items: stretch;
     }
@@ -426,8 +449,8 @@ a.hover-link {
     img.obj-img {
         vertical-align: top;
         position: relative;
-        width: 180px;
-        height: 100px;
+        width: 30vw;
+        height: 15vh;
     }
 
 }
@@ -439,7 +462,7 @@ a.hover-link {
 
     div.col-md-2 {
         padding: 2px 2px;
-        width:  210px;
+        width:  40vw;
     }
     div.service_el {
         max-width: 210px;
@@ -465,6 +488,22 @@ a.hover-link {
     
 }
 
+@media screen and (max-width: 389px) {
+
+    div.col-md-2 > .service_el {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% 25%;
+        grid-column-gap: 20px;
+        grid-row-gap: 5px;
+        justify-items: stretch;
+        /*align-items: stretch;*/
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: flex-start;
+    }
+}
+
 @media (max-width: 400px) {
 
     .tab-content > .active {
@@ -476,7 +515,8 @@ a.hover-link {
         justify-items: stretch;
         align-items: stretch; */
         display: grid;
-        grid-template-columns: 45% 45%;
+        /*grid-template-columns: 45% 45%;*/
+        grid-template-columns: 50% 50%;
         grid-template-rows: 30% 33% 25%;
         grid-column-gap: 13px;
         grid-row-gap: 15px;
@@ -489,17 +529,31 @@ a.hover-link {
         vertical-align: top;
         position: relative;
         width: 155px;
-        height: 80px;
+        height: 12vh;
     }
+
+    /*div.col-md-2 > .service_el {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 1fr;*/
+    /*    grid-template-rows: 80% 20%;*/
+    /*    grid-column-gap: 20px;*/
+    /*    grid-row-gap: 20px;*/
+    /*    justify-items: stretch;*/
+    /*    align-items: stretch;*/
+
+    /*}*/
 
     div.col-md-2 > .service_el {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80% 20%;
+        grid-template-rows: 75% 25%;
         grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-row-gap: 5px;
         justify-items: stretch;
-        align-items: stretch;
+        /*align-items: stretch;*/
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: flex-start;
     }
 
     div.service_el {
@@ -519,7 +573,7 @@ a.hover-link {
 
     div.col-md-2 {
         width: 170px;
-        height: 130px;
+        height: 19vh;
     }
 
     .indent-lang {
