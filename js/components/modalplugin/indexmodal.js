@@ -358,12 +358,12 @@ const toHTML = subject => `
     </div>
 `
 
-// const objRegions = ['#nav-north', 
-// '#nav-center', 
-// '#nav-south', 
-// '#nav-east', 
-// '#nav-west', 
-// '#nav-south']
+const objRegions = ['#nav-north',
+'#nav-center',
+'#nav-south',
+'#nav-east',
+'#nav-west',
+'#nav-south']
 
 
 

@@ -97,3 +97,35 @@ btnHam.addEventListener('click', () => {
 // navItem.addEventListener('click', () => {
 //     navItem.classList.toggle('show')
 // })
+
+
+
+let intervalID
+
+document.querySelectorAll('.dropdown-toggler').forEach(el => {
+    el.addEventListener('click', (event) => {
+        const menu = event.currentTarget.dataset.path
+        document.querySelectorAll('.drop-menu').forEach(el => {
+
+            const trueMenu = document.querySelector(`[data-target=${menu}]`)
+
+
+            if (!trueMenu.classList.contains('open')) {
+
+                el.classList.remove('show-drop-menu')
+                el.classList.remove('open')
+                trueMenu.classList.add('show-drop-menu')
+                intervalID = setTimeout(() =>{
+                    trueMenu.classList.add('open')
+                }, 0)
+            }
+
+            if (trueMenu.classList.contains('open')) {
+                trueMenu.classList.remove('show-drop-menu')
+                intervalID = setTimeout(() => {
+                    trueMenu.classList.remove('open')
+                })
+            }
+        })
+    })
+})

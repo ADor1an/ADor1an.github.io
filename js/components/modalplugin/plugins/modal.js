@@ -1,26 +1,4 @@
 
-// const subjects = [
-//     {id: 1, title: 'ТОВ «АМБАР+»', toString:function (){ return this.title},
-//         price: 20,
-//         img: 'https://zeo.ua/storage/app/media/objects/amb1.jpg'},
-//     {id: 2, title: 'ТОВ «НОВОТЕХ-ТЕРМІНАЛ»', toString:function (){ return this.title},
-//         price: 30,
-//         img: 'https://zeo.ua/storage/app/media/objects/Building/prev.jpg'},
-//     {id: 3, title: 'ТОВ «МВ КАРГО» (CARGILL)', toString:function (){ return this.title},
-//         price: 40,
-//         img: 'https://zeo.ua/storage/app/media/objects/Building/cargo-prev.jpg'},
-//     {id: 4, title: 'ТОВ «БУЧАЧАГРОХЛІБПРОМ»', toString:function (){ return this.title},
-//         price: 45,
-//         img: 'https://zeo.ua/storage/app/media/services/stroitelstvo/buchach-new.jpg'},
-//     {id: 5, title: 'ТОВ «ОЛСІДЗ БЛЕК СІ»', toString:function (){ return this.title},
-//         price: 45,
-//         img: 'https://zeo.ua/storage/app/media/services/stroitelstvo/olsidz-new.jpg'},
-//     {id: 6, title: 'ТОВ «COFCO-AGRI»', toString:function (){ return this.title},
-//         price: 45,
-//         img: 'https://zeo.ua/storage/app/media/services/stroitelstvo/cofco-new.jpg'}
-// ]
-
-
 
 Element.prototype.appendAfter = function(element) {
     element.parentNode.insertBefore(this, element.nextSibling);
@@ -72,6 +50,8 @@ function _createModal(options) {
     `)
 
 
+    // const vWindow = document.querySelector('.vmodal-window')
+
     const gallery = _createCarousel(options.galleries) 
 
     gallery.appendAfter(modal.querySelector('[data-content]'))
@@ -99,6 +79,20 @@ function _createCarousel(options) {
     return wrap
 }
 
+const modalWindow = document.querySelector('.vmodal-window')
+
+function wipeScroll () {
+    modalWindow.addEventListener('scroll', () => {
+        let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight)
+
+        if (!btnPressed && (window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)) {
+
+            document.querySelector(selector).click()
+
+
+        }
+    })
+}
 
 
 
@@ -108,7 +102,6 @@ $.modal = function(options) {
     const $modal = _createModal(options)
     
     const btnClose = document.querySelector('.close-vmodal')
-    // const voverlay = document.querySelector('.vmodal-overlay')
     const ANIMATION_SPEED = 350
     let closing = false
     let destroyed = false
@@ -122,12 +115,22 @@ $.modal = function(options) {
             !closing && $modal.classList.add('open')
             btnClose.style.visibility = 'visible'
             btnClose.classList.add('active')
+            // console.log(modalWindow.scrollTop(1))
 
         },
         close() {
             $modal.classList.remove('open')
             $modal.classList.add('hide')
             btnClose.style.visibility = 'hidden'
+            // console.log(vWindow.scrollTop(0, 1));
+            // console.log(modalWindow.scrollTop(0))
+
+            // vWindow.scrollTo({
+            //     top: 10,
+            //     left: 0,
+            //     behavior: 'smooth'
+            // });
+            
             // document.body.style.cssText = `
             // overflow-y:hidden;
             // `
@@ -146,8 +149,9 @@ $.modal = function(options) {
     const listener = event => {
 
         if (event.target.parentNode.dataset.close || event.target.dataset.close) {
-                modal.close()
-            }
+
+            modal.close()
+        }
 
         if (event.target.parentNode.dataset.open || event.target.dataset.open) {
             modal.open()
