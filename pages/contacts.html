@@ -1,333 +1,418 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet" >
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link href="../assets/img/favicon.png" rel="icon" >
     <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/blocks/contact-block.css">
 
 
-  <title>Контакти</title>
+    <title>Контакти</title>
 </head>
 <body>
 
 <div class="container-fluid mb-5">
-  <div class="col-md-12 navigate row">
-    <div class="fixed-top indent-nav">
-      <nav class=" navbar navbar-expand-md navbar-light bg-transparent no-x-pad-xs sticky-top">
-      <a class="navbar-brand" href="../index.html"><img src="../assets/img/favicon.png" alt=""></a>
-      <button class="hamburger hamburger--vortex js-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="hamburger-box ">
+    <div class="col-md-12 navigate row">
+        <div class="fixed-top indent-nav">
+            <nav class=" navbar navbar-expand-md navbar-light bg-transparent no-x-pad-xs sticky-top">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/favicon.png" alt=""></a>
+                <button class="hamburger hamburger--vortex js-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-box ">
               <span class="hamburger-inner "></span>
           </span>
-      </button>
+                </button>
 
-          <ul class="navbar-nav mx-auto not-collapsed">
-              <li class="drop-btn dropdown">
-                  <button  class="btn dropdown-toggle bg-transparent " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Компанія
-                  </button>
-                  <ul class="dropdown-menu bg-transparent " aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="/pages/company.html">Про Компанію</a></li>
-                      <li><a class="dropdown-item" href="/pages/doc.html">Документи</a></li>
-                      <li><a class="dropdown-item" href="/pages/sertificates.html">Сертифікати</a></li>
-                      <li><a class="dropdown-item" href="/pages/partners.html">Партнери</a></li>
-                      <li><a class="dropdown-item" href="/pages/dirsword.html">Слово Директора</a></li>
-                      <li><a class="dropdown-item" href="/pages/objects.html">Об'єкти</a></li>
-                  </ul>
-              </li>
-              <li class="drop-btn dropdown">
-                  <button class="btn dropdown-toggle bg-transparent " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Послуги
-                  </button>
-                  <ul class="dropdown-menu bg-transparent " aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="/pages/construction.html">Конструювання</a></li>
-                      <li><a class="dropdown-item" href="/pages/engineering.html">Інженерія</a></li>
-                      <li><a class="dropdown-item" href="/pages/automatisation.html">Автоматизація</a></li>
-                      <li><a class="dropdown-item" href="/pages/service.html">Послуги</a></li>
-                  </ul>
-              </li>
-              <li class="drop-btn dropdown">
-                  <button class="btn dropdown-toggle bg-transparent " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Контакти
-                  </button>
-                  <ul class="dropdown-menu bg-transparent " aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="/pages/contacts.html">Контакти</a></li>
-                      <li><a class="dropdown-item" href="/pages/q&a.html">Q&A</a></li>
-                  </ul>
-              </li>
-              <li class="bot-btn">
-                  <button class=" botButton btn-feedback" data-bs-toggle="modal" data-bs-target="#modal-feedback2" >
-                      <i class="bi bi-telephone-forward"></i>
-                  </button>
-              </li>
-              <div class="modal fade secondModal" id="modal-feedback2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                              <form id="form" >
+                <ul class="navbar-nav mx-auto not-collapsed">
+                    <li class="drop-btn dropdown">
+                        <button  class="btn dropdown-toggle bg-transparent " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Компанія
+                        </button>
+                        <ul class="dropdown-menu bg-transparent " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/pages/company.html">Про Компанію</a></li>
+                            <li><a class="dropdown-item" href="/pages/doc.html">Документи</a></li>
+                            <li><a class="dropdown-item" href="/pages/sertificates.html">Сертифікати</a></li>
+                            <li><a class="dropdown-item" href="/pages/partners.html">Партнери</a></li>
+                            <li><a class="dropdown-item" href="/pages/dirsword.html">Слово Директора</a></li>
+                            <li><a class="dropdown-item" href="/pages/objects.html">Об'єкти</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-btn dropdown">
+                        <button class="btn dropdown-toggle bg-transparent " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Послуги
+                        </button>
+                        <ul class="dropdown-menu bg-transparent " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/pages/construction.html">Конструювання</a></li>
+                            <li><a class="dropdown-item" href="/pages/engineering.html">Інженерія</a></li>
+                            <li><a class="dropdown-item" href="/pages/automatisation.html">Автоматизація</a></li>
+                            <li><a class="dropdown-item" href="/pages/service.html">Послуги</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-btn dropdown">
+                        <button class="btn dropdown-toggle bg-transparent " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Контакти
+                        </button>
+                        <ul class="dropdown-menu bg-transparent " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/pages/contacts.html">Контакти</a></li>
+                            <li><a class="dropdown-item" href="/pages/q&a.html">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li class="bot-btn">
+                        <button class=" botButton btn-feedback" data-bs-toggle="modal" data-bs-target="#modal-feedback2" >
+                            <i class="bi bi-telephone-forward"></i>
+                        </button>
+                    </li>
+                    <div class="modal fade secondModal" id="modal-feedback2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="form" >
 
-                                  <div class="input-group mb-3">
-                                      <input type="name" name="user_name" id="name" class="form-control" placeholder="Ім'я" aria-label="Name">
+                                        <div class="input-group mb-3">
+                                            <input type="name" name="user_name" id="name" class="form-control" placeholder="Ім'я" aria-label="Name">
 
-                                  </div>
-                                  <div class="input-group mb-3">
-                                      <input type="email" name="user_email" id="email" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
-                                      <span class="input-group-text" id="basic-addon2">email@.com:</span>
-                                  </div>
-                                  <div class="input-group mb-3">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="email" name="user_email" id="email" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
+                                            <span class="input-group-text" id="basic-addon2">email@.com:</span>
+                                        </div>
+                                        <div class="input-group mb-3">
                                                 <span class="input-group-text" id="basic-addon1">
                                                     <i class="bi bi-telephone-forward"></i>
                                                 </span>
-                                      <input type="tel" name="user_phone" id="phone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
-                                  </div>
-                                  <div class="input-group mb-3">
-                                      <span class="input-group-text" id="basic-addon1">@</span>
-                                      <input type="telegramUserName" id="tgUsName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
-                                  </div>
-                                  <div class="input-group">
-                                      <span class="input-group-text">Ваше  повідомлення: </span>
-                                      <textarea name="user-message" id="user-message" class="form-control"  aria-label="With textarea"></textarea>
-                                  </div>
+                                            <input type="tel" name="user_phone" id="phone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="telegramUserName" id="tgUsName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-text">Ваше  повідомлення: </span>
+                                            <textarea name="user-message" id="user-message" class="form-control"  aria-label="With textarea"></textarea>
+                                        </div>
 
-                                  <div class="submit-wrapper">
-                                      <button type="submit" class="btn btn-primary send" data-submit="true">Send</button>
-                                  </div>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </ul>
+                                        <div class="submit-wrapper">
+                                            <button type="submit" class="btn btn-primary send" data-submit="true">Send</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
 
-          <div class="collapsed-menu">
-              <ul class="navbar-nav mx-auto">
-                  <li class="nav-item ">
-                      <button data-path="one"  class="btn nav-btn dropdown-toggler">
-                          Компанія
-                      </button>
-                      <ul data-target="one" class="drop-menu first-drop" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="/pages/company.html">Про Компанію</a></li>
-                          <li><a class="dropdown-item" href="/pages/doc.html">Документи</a></li>
-                          <li><a class="dropdown-item" href="/pages/sertificates.html">Сертифікати</a></li>
-                          <li><a class="dropdown-item" href="/pages/partners.html">Партнери</a></li>
-                          <li><a class="dropdown-item" href="/pages/dirsword.html">Слово Директора</a></li>
-                          <li><a class="dropdown-item" href="/pages/objects.html">Об'єкти</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <button data-path="two" class="btn nav-btn dropdown-toggler" >
-                          Послуги
-                      </button>
-                      <ul data-target="two" class="drop-menu second-drop" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="/pages/construction.html">Конструювання</a></li>
-                          <li><a class="dropdown-item" href="/pages/engineering.html">Інженерія</a></li>
-                          <li><a class="dropdown-item" href="/pages/automatisation.html">Автоматизація</a></li>
-                          <li><a class="dropdown-item" href="/pages/service.html">Послуги</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <button data-path="three" class="btn nav-btn dropdown-toggler" >
-                          Контакти
-                      </button>
-                      <ul data-target="three" class="drop-menu third-drop" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="/pages/contacts.html">Контакти</a></li>
-                          <li><a class="dropdown-item" href="/pages/q&a.html">Q&A</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item bot-btn">
-                      <button class=" botButton btn-feedback" data-bs-toggle="modal" data-bs-target="#modal-feedback" >
-                          <i class="bi bi-telephone-forward"></i>
-                      </button>
-                  </li>
-                  <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                  <form id="secondForm" >
+                <div class="collapsed-menu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item ">
+                            <button data-path="one"  class="btn nav-btn dropdown-toggler">
+                                Компанія
+                            </button>
+                            <ul data-target="one" class="drop-menu first-drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/pages/company.html">Про Компанію</a></li>
+                                <li><a class="dropdown-item" href="/pages/doc.html">Документи</a></li>
+                                <li><a class="dropdown-item" href="/pages/sertificates.html">Сертифікати</a></li>
+                                <li><a class="dropdown-item" href="/pages/partners.html">Партнери</a></li>
+                                <li><a class="dropdown-item" href="/pages/dirsword.html">Слово Директора</a></li>
+                                <li><a class="dropdown-item" href="/pages/objects.html">Об'єкти</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button data-path="two" class="btn nav-btn dropdown-toggler" >
+                                Послуги
+                            </button>
+                            <ul data-target="two" class="drop-menu second-drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/pages/construction.html">Конструювання</a></li>
+                                <li><a class="dropdown-item" href="/pages/engineering.html">Інженерія</a></li>
+                                <li><a class="dropdown-item" href="/pages/automatisation.html">Автоматизація</a></li>
+                                <li><a class="dropdown-item" href="/pages/service.html">Послуги</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button data-path="three" class="btn nav-btn dropdown-toggler" >
+                                Контакти
+                            </button>
+                            <ul data-target="three" class="drop-menu third-drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/pages/contacts.html">Контакти</a></li>
+                                <li><a class="dropdown-item" href="/pages/q&a.html">Q&A</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item bot-btn">
+                            <button class=" botButton btn-feedback" data-bs-toggle="modal" data-bs-target="#modal-feedback" >
+                                <i class="bi bi-telephone-forward"></i>
+                            </button>
+                        </li>
+                        <div class="modal fade" id="modal-feedback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="secondForm" >
 
-                                      <div class="input-group mb-3">
-                                          <input type="name" name="user_name" id="secondName" class="form-control" placeholder="Ім'я" aria-label="Name">
+                                            <div class="input-group mb-3">
+                                                <input type="name" name="user_name" id="secondName" class="form-control" placeholder="Ім'я" aria-label="Name">
 
-                                      </div>
-                                      <div class="input-group mb-3">
-                                          <input type="email" name="user_email" id="secondEmail" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
-                                          <span class="input-group-text" id="basic-addon2">email@.com:</span>
-                                      </div>
-                                      <div class="input-group mb-3">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="email" name="user_email" id="secondEmail" class="form-control" placeholder="email@.com:" aria-label="email@.com:" aria-describedby="basic-addon2">
+                                                <span class="input-group-text" id="basic-addon2">email@.com:</span>
+                                            </div>
+                                            <div class="input-group mb-3">
                                                     <span class="input-group-text" id="basic-addon1">
                                                         <i class="bi bi-telephone-forward"></i>
                                                     </span>
-                                          <input type="tel" name="user_phone" id="secondPhone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
-                                      </div>
-                                      <div class="input-group mb-3">
-                                          <span class="input-group-text" id="basic-addon1">@</span>
-                                          <input type="telegramUserName" id="secondTgUsName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
-                                      </div>
-                                      <div class="input-group">
-                                          <span class="input-group-text">Ваше  повідомлення: </span>
-                                          <textarea name="user-message" id="second-user-message" class="form-control"  aria-label="With textarea"></textarea>
-                                      </div>
+                                                <input type="tel" name="user_phone" id="secondPhone" class="form-control" placeholder="Номер телефону" aria-label="telephone" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="telegramUserName" id="secondTgUsName" name="user-tg" class="form-control" placeholder="Ім'я користувача" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-text">Ваше  повідомлення: </span>
+                                                <textarea name="user-message" id="second-user-message" class="form-control"  aria-label="With textarea"></textarea>
+                                            </div>
 
-                                      <div class="submit-wrapper">
-                                          <button type="submit" class="btn btn-primary">Send</button>
-                                      </div>
-                                  </form>
-                              </div>
+                                            <div class="submit-wrapper">
+                                                <button type="submit" class="btn btn-primary">Send</button>
+                                            </div>
+                                        </form>
+                                    </div>
 
-                          </div>
-                      </div>
-                  </div>
-              </ul>
-          </div>
-
-
-
-          </ul>
-      </div>
-  </nav>
-  </div>
-  </div>
-
-  <div class="content d-flex flex-row ">
-   <div class="text-container sticky-top">
-     <h1 class="text-center text-uppercase">як нас знайти</h1>
-   </div>
-
-    <div class="contacts-container ">
-
-      <div class="row justify-content-md-between">
-
-        <div class="col-md-6 d-flex">
-
-          <div class="contact-block">
-
-            <div class="row justify-content-around">
-
-              <div class="col col-md-4">
-                <div class="address  ">
-                  <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                  </button>
-                  <div class="loc">
-                    <p class="text-justify">Lorem ipsum dolor sit amet.</p>
-                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
                 </div>
-              </div>
-              <div class="col col-md-4">
-                <div class="email  ">
-                  <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                    </svg>
-                  </button>
-                  <div class="mail">
-                    <p class="text-justify">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-md-4">
-                <div class="callus  ">
-                  <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg>
-                  </button>
-                  <div class="phones">
-                    <p class="text-justify">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-md-4">
-                <div class="social-block">
-                  <p class="text-justify">Lorem ipsum dolor sit amet.</p>
-                  <p class="text-justify">Lorem ipsum dolor sit amet.</p>
-                  <p class="text-justify">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
 
-            </div>
-          </div>
+
+
+
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="content d-flex flex-row contact-crutches ">
+        <div class="text-container sticky-top">
+            <h1 class="text-center text-uppercase text-crutches">як нас знайти</h1>
         </div>
 
-        <div class="col-md-6 d-flex">
+        <div class="contacts-container row ">
+            <div class="col-sm-12 col-lg-3 col-md-4 col-xl-3 ">
 
-          <div class="maps-block justify-content-center">
+                <div class="contact-block">
+                    <nav class="tabs-container tabs-container-mod">
+                        <div class="nav nav-tabs nav-tabs-modeficator " id="nav-tab" role="tablist">
+                            <a class="nav-link tab-crutches" id="hr-tab" data-bs-toggle="tab" data-bs-target="#hr" type="button" role="tab" aria-controls="contact" aria-selected="false">HR</a>
 
-            <div class="maps-container">
-              <iframe frameborder="0" scrolling="no" height="450" width="90%"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2543.5322278039557!2d30.367961000000005!3d50.393918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca32e24fe031%3A0xa73bfba4ee00c7de!2z0LLRg9C70LjRhtGPINCh0LLRj9GC0L7RiNC40L3RgdGM0LrQsCwgNDEsINCS0LjRiNC90LXQstC1LCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA4MTMy!5e0!3m2!1suk!2sua!4v1641401695442!5m2!1suk!2sua" aria-label="London Eye, London, United Kingdom"></iframe>
+                            <a class="nav-link tab-crutches active" id="hot-line-tab" data-bs-toggle="tab" data-bs-target="#hot-line" type="button" role="tab" aria-controls="home" aria-selected="true">Гаряча лінія</a>
+
+                            <a class="nav-link tab-crutches" id="service-tab" data-bs-toggle="tab" data-bs-target="#service" type="button" role="tab" aria-controls="profile" aria-selected="false">Сервісний відділ</a>
+
+                            <a class="nav-link tab-crutches" id="supply-tab" data-bs-toggle="tab" data-bs-target="#supply" type="button" role="tab" aria-controls="contact" aria-selected="false">Відділ постачання</a>
+
+
+                            <a class="nav-link tab-crutches" id="comercial-department-tab" data-bs-toggle="tab" data-bs-target="#comercial-department" type="button" role="tab" aria-controls="contact" aria-selected="false">Комерційний відділ</a>
+
+                        </div>
+                    </nav>
+
+
+
+
+
+                </div>
             </div>
 
-          </div>
+            <div class="col-sm-12 col-lg-3 col-md-4 col-xl-3">
+                <div class="tab-content tab-content-mod" id="myTabContent">
+                    <div class="tab-pane contactItem fade show active" id="hot-line" role="tabpanel" aria-labelledby="hot-line-tab">
+                        <div class="contactImage">
+                            <img src="../assets/img/contacts/anna-210x210.jpg" class="image-tabs" alt="">
+                        </div>
+                        <h5></h5>
+                        <div class="contactInfo">
+                            <p class="contactInfo-text">
+                                <strong>
+                                    Секретар
+                                </strong>
+                            </p>
+                            <ul class="phone-list">
+                                <li class="number">
+                                    <a href="tel:+380487868300">+38(048)7868300</a>
+                                </li>
+                                <li class="number">
+                                    <a href="tel:+380675585837">+38(067)5585837</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane contactItem fade" id="service" role="tabpanel" aria-labelledby="service-tab">
+                        <div class="contactImage">
+                            <img src="../assets/img/contacts/anna-210x210.jpg" class="image-tabs" alt="">
+                        </div>
+                        <h5></h5>
+                        <div class="contactInfo">
+                            <p class="contactInfo-text">
+                                <strong>
+                                    Керівник сервісного відділу
+                                </strong>
+                            </p>
+                            <ul class="phone-list">
+                                <li class="number">
+                                    <a href="tel:+380487868300">+38(048)7868300</a>
+                                </li>
+                                <li class="number">
+                                    <a href="tel:+380675585837">+38(067)5585837</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane contactItem fade" id="supply" role="tabpanel" aria-labelledby="supply-tab">
+                        <div class="contactImage">
+                            <img src="../assets/img/contacts/anna-210x210.jpg" class="image-tabs" alt="">
+                        </div>
+                        <h5></h5>
+                        <div class="contactInfo">
+                            <p class="contactInfo-text">
+                                <strong>
+                                    Керівник відділу постачання
+                                </strong>
+                            </p>
+                            <ul class="phone-list">
+                                <li class="number">
+                                    <a href="tel:+380487868300">+38(048)7868300</a>
+                                </li>
+                                <li class="number">
+                                    <a href="tel:+380675585837">+38(067)5585837</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane contactItem fade" id="hr" role="tabpanel" aria-labelledby="hr-tab">
+                        <div class="contactImage">
+                            <img src="../assets/img/contacts/anna-210x210.jpg" class="image-tabs" alt="">
+                        </div>
+                        <h5></h5>
+                        <div class="contactInfo">
+                            <p class="contactInfo-text">
+                                <strong>
+                                    Керівник відділу постачання
+                                </strong>
+                            </p>
+                            <ul class="phone-list">
+                                <li class="number">
+                                    <a href="tel:+380487868300">+38(048)7868300</a>
+                                </li>
+                                <li class="number">
+                                    <a href="tel:+380675585837">+38(067)5585837</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane contactItem fade" id="comercial-department" role="tabpanel" aria-labelledby="comercial-department-tab">
+                        <div class="contactImage">
+                            <img src="../assets/img/contacts/anna-210x210.jpg" class="image-tabs" alt="">
+                        </div>
+                        <h5></h5>
+                        <div class="contactInfo">
+                            <p class="contactInfo-text">
+                                <strong>
+                                    Директор з продажів
+                                </strong>
+                            </p>
+                            <ul class="phone-list">
+                                <li class="number">
+                                    <a href="tel:+380487868300">+38(048)7868300</a>
+                                </li>
+                                <li class="number">
+                                    <a href="tel:+380675585837">+38(067)5585837</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-4 col-xl-3">
+                <div class="maps-block ">
+
+                    <div class="maps-container">
+                        <iframe frameborder="0" scrolling="no" height="450" width="90%"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2543.5322278039557!2d30.367961000000005!3d50.393918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca32e24fe031%3A0xa73bfba4ee00c7de!2z0LLRg9C70LjRhtGPINCh0LLRj9GC0L7RiNC40L3RgdGM0LrQsCwgNDEsINCS0LjRiNC90LXQstC1LCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA4MTMy!5e0!3m2!1suk!2sua!4v1641401695442!5m2!1suk!2sua" aria-label="London Eye, London, United Kingdom"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
 
         </div>
-      </div>
 
     </div>
 
-  </div>
 
+    <div class="footer">
 
-  <div class="footer">
-
-    <div class="indent-lang fixed-bottom">
-        <button type="button" class="btn btn-info btn-lang">UA</button>
-        <button type="button" class="btn btn-info btn-lang">RU</button>
-    </div>
-
-    <div class="section">
-    <div class="footer-block">
-        <div class="footer-nav">
-            <footer class="indent-footer">
-                <div class="instagram soc">
-                    <a href=""><img src="../assets/bootstrap-icons/instagram.svg" alt=""></a>
-                </div>
-                <div class="twitter soc">
-                    <a href=""><img src="../assets/bootstrap-icons/twitter.svg" alt=""></a>
-                </div>
-                <div class="facebook soc">
-                    <a href=""><img src="../assets/bootstrap-icons/facebook.svg" alt=""></a>
-                </div>
-                <div class="youtube soc">
-                    <a href=""><img src="../assets/bootstrap-icons/youtube.svg" alt=""></a>
-                </div>
-                <div class="telegram soc">
-                    <a href=""><img src="../assets/bootstrap-icons/telegram.svg" alt=""></a>
-                </div>
-            </footer>
+        <div class="indent-lang fixed-bottom">
+            <button type="button" class="btn btn-info btn-lang">UA</button>
+            <button type="button" class="btn btn-info btn-lang">RU</button>
         </div>
-    </div>
-    <a href="#" class="footer-btn" >
+
+        <div class="section">
+            <div class="footer-block">
+                <div class="footer-nav">
+                    <footer class="indent-footer">
+                        <div class="instagram soc">
+                            <a href=""><img src="../assets/bootstrap-icons/instagram.svg" alt=""></a>
+                        </div>
+                        <div class="twitter soc">
+                            <a href=""><img src="../assets/bootstrap-icons/twitter.svg" alt=""></a>
+                        </div>
+                        <div class="facebook soc">
+                            <a href=""><img src="../assets/bootstrap-icons/facebook.svg" alt=""></a>
+                        </div>
+                        <div class="youtube soc">
+                            <a href=""><img src="../assets/bootstrap-icons/youtube.svg" alt=""></a>
+                        </div>
+                        <div class="telegram soc">
+                            <a href=""><img src="../assets/bootstrap-icons/telegram.svg" alt=""></a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <a href="#" class="footer-btn" >
         <span class="btn-icon-foot">
             <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ar-sh" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
             </svg>
         </span>
 
-        <span class="btn-icon-foot_active">
+                <span class="btn-icon-foot_active">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
         </span>
-    </a>
+            </a>
+
+        </div>
 
     </div>
-
-</div>
 
 
 </div>

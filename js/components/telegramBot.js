@@ -1,21 +1,10 @@
 const form = document.querySelector('#form')
-const modal = document.querySelectorAll('.modal')
-const secondModal = document.querySelector('.secondModal')
-// const $modalContent = document.querySelector('.modal-content')
-// const closeBtn = document.querySelector(`[data-submit]`)
-
-
-console.log(form)
+// const modal = document.querySelectorAll('.modal')
+// const secondModal = document.querySelector('.secondModal')
+// const firstModal = document.querySelector('.firstModal')
 
 
 
-    // document.addEventListener('click', event => {
-    //     // event.preventDefault()
-    //     console.log(event.target)
-    //     if(event.target.dataset.submit || event.target.dataset.submit ) {
-    //         modalParent.close()
-    //     }
-    // })
 
 
 
@@ -42,70 +31,58 @@ console.log(form)
         api.open('GET', url, true)
         api.send()
 
+
+
         console.log('Message successfully')
-        modal.classList.remove('show')
+        // firstModal.classList.remove('show')
 
         // console.log(text1, text2)
     } )
 
+
+
+
 const secondForm = document.querySelector('#secondForm')
 
-console.log(secondForm)
+    secondForm.addEventListener('submit', event => {
+        event.preventDefault()
 
 
-secondForm.addEventListener('submit', event => {
-    event.preventDefault()
+        const secondName = document.getElementById('secondName').value
+        const secondEmail = document.getElementById('secondEmail').value
+        const secondTgUsName = document.getElementById('secondTgUsName').value
+        const secondPhone = document.getElementById('secondPhone').value
+        const secondTextarea = document.getElementById('second-user-message').value
+
+        const my_text = ` Your message is:%0A -  <b>Name:</b> <i>${secondName}</i> %0A - <b>Email:</b> <i>${secondEmail}</i> %0A - <b>Telegram User Name:</b> <i>${secondTgUsName}</i> %0A - <b>Phone number:</b> <i>${secondPhone}</i> %0A - <b>Customer message :</b> <i>${secondTextarea}</i>`;
+        // const my_text = ` Your message is:%0A -  Name: ${name} %0A - Email: ${email} %0A - Telegram User Name: ${tgUsName} %0A - Phone number: ${phone}`;
+
+        const token = '5127097269:AAHrLpvUlp5KWgNhRQYN8i8kXJb3-Kk2lzc'
+        const chat_id = -725632275
+        const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}&parse_mode=html`
 
 
-    const secondName = document.getElementById('secondName').value
-    const secondEmail = document.getElementById('secondEmail').value
-    const secondTgUsName = document.getElementById('secondTgUsName').value
-    const secondPhone = document.getElementById('secondPhone').value
-    const secondTextarea = document.getElementById('second-user-message').value
+        let api = new XMLHttpRequest()
 
-    const my_text = ` Your message is:%0A -  <b>Name:</b> <i>${secondName}</i> %0A - <b>Email:</b> <i>${secondEmail}</i> %0A - <b>Telegram User Name:</b> <i>${secondTgUsName}</i> %0A - <b>Phone number:</b> <i>${secondPhone}</i> %0A - <b>Customer message :</b> <i>${secondTextarea}</i>`;
-    // const my_text = ` Your message is:%0A -  Name: ${name} %0A - Email: ${email} %0A - Telegram User Name: ${tgUsName} %0A - Phone number: ${phone}`;
+        api.open('GET', url, true)
+        api.send()
 
-    const token = '5127097269:AAHrLpvUlp5KWgNhRQYN8i8kXJb3-Kk2lzc'
-    const chat_id = -725632275
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}&parse_mode=html`
+        console.log('Message successfully')
+
+        // secondModal.classList.remove('show')
 
 
-    let api = new XMLHttpRequest()
-
-    api.open('GET', url, true)
-    api.send()
-
-    console.log('Message successfully')
-    secondModal.classList.remove('show')
-
-    // console.log(text1, text2)
-} )
-
-
-
+    } )
 
 //
-// function modalClose() {
+// document.addEventListener('click', event => {
+//     console.log(event.target.dataset)
+//     if (event.target.dataset.closeFeedback) {
+//         closeModal()
+//     }
+// } )
 //
-//     $modalContent.addEventListener('click', event => {
-//         event.preventDefault()
-//         console.log(event.target.dataset)
-//         if (event.target.dataset.submit) {
-//             modalParent.close()
-//         }
-//     })
-// }
-//     modalClose()
-//
-//
-// const modalParent =  {
-//     close() {
-//         $modal.classList.remove('show')
-//         $modal.classList.add('hide')
-//         setTimeout(() => {
-//             $modal.classList.remove('hide')
-//
-//         }, 15000)
-// }
-// }
+//     function closeModal() {
+//         // modal.classList.remove("show")
+//         modal.style.display = 'none'
+//     }

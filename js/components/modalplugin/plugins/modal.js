@@ -165,7 +165,7 @@ $.modal = function(options) {
     const listener = event => {
 
         if (event.target.parentNode.dataset.close || event.target.dataset.close) {
-
+            console.log(event.target)
             modal.close()
         }
 
