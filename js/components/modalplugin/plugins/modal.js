@@ -16,7 +16,7 @@ function _createModal(options) {
     modal.classList.add('vmodal')
     
     
-    console.log(modal);
+    // console.log(modal);
     modal.insertAdjacentHTML('afterbegin', `
     <div class="vmodal-overlay" data-close="true">
     <div class="vmodal-window" style="width: ${options.width || DEFAULT_WIDTH}" >
@@ -121,11 +121,7 @@ $.modal = function(options) {
             btnClose.classList.add('active')
             navBrand.style.visibility = 'hidden'
             notCollapsed.style.visibility = 'hidden'
-            // notCollapsed.style.cssText = `
-            // z-index: -1;
-            // `
 
-            // console.log(modalWindow.scrollTop(1))
 
         },
         close() {
@@ -135,21 +131,6 @@ $.modal = function(options) {
             notCollapsed.style.visibility = 'visible'
 
             navBrand.style.visibility = 'visible'
-            // notCollapsed.style.zIndex = '10'
-
-
-            // console.log(vWindow.scrollTop(0, 1));
-            // console.log(modalWindow.scrollTop(0))
-
-            // vWindow.scrollTo({
-            //     top: 10,
-            //     left: 0,
-            //     behavior: 'smooth'
-            // });
-            
-            // document.body.style.cssText = `
-            // overflow-y:hidden;
-            // `
 
             closing = true
             setTimeout(() => {
@@ -165,7 +146,7 @@ $.modal = function(options) {
     const listener = event => {
 
         if (event.target.parentNode.dataset.close || event.target.dataset.close) {
-            console.log(event.target)
+            // console.log(event.target)
             modal.close()
         }
 

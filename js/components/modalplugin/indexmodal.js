@@ -358,12 +358,14 @@ const toHTML = subject => `
     </div>
 `
 
-// const objRegions = ['#nav-north',
-// '#nav-center',
-// '#nav-south',
-// '#nav-east',
-// '#nav-west',
-// '#nav-south']
+const objRegions = [
+        '#nav-north',
+        '#nav-center',
+        '#nav-south',
+        '#nav-east',
+        '#nav-west',
+        '#nav-south'
+]
 
 
 
@@ -374,7 +376,11 @@ function render() {
         // subject => toHTML(subject)
         toHTML
     ).join('')
-    document.querySelector('#nav-north').innerHTML = html
+    document.querySelector(`${
+        objRegions.map( function (el) {
+            return el
+            })
+    }`).innerHTML = html
 }
 render()
 

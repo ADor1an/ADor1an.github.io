@@ -1,12 +1,14 @@
+// const modal = document.querySelector('.modal')
+ const modalBtn = document.querySelector('.btn')
+
+
+    // closeModal = (what_Modal) => {
+    //     modal.hide()
+    //   }
+
+
+
 const form = document.querySelector('#form')
-// const modal = document.querySelectorAll('.modal')
-// const secondModal = document.querySelector('.secondModal')
-// const firstModal = document.querySelector('.firstModal')
-
-
-
-
-
 
     form.addEventListener('submit', event => {
         event.preventDefault()
@@ -31,12 +33,13 @@ const form = document.querySelector('#form')
         api.open('GET', url, true)
         api.send()
 
-
-
         console.log('Message successfully')
+
+        // modalBtn.addEventListener('click', closeModal)
         // firstModal.classList.remove('show')
 
         // console.log(text1, text2)
+
     } )
 
 
