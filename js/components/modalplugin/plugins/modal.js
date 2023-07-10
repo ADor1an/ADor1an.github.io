@@ -1,22 +1,12 @@
-
-
 Element.prototype.appendAfter = function(element) {
     element.parentNode.insertBefore(this, element.nextSibling);
 }
-
 function noop () {}
-
 
 function _createModal(options) {
     const DEFAULT_WIDTH = '600px'
-    
-    const modalParent = document.querySelector('#vmodal')
-
     const modal = document.createElement('div')
     modal.classList.add('vmodal')
-    
-    
-    // console.log(modal);
     modal.insertAdjacentHTML('afterbegin', `
     <div class="vmodal-overlay" data-close="true">
     <div class="vmodal-window" style="width: ${options.width || DEFAULT_WIDTH}" >
@@ -27,11 +17,9 @@ function _createModal(options) {
             <div data-image>
             <picture>
             ${options.image || ''}
-                
                 <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" height="600px" width="100%" alt="">
             </picture>
             </div>
-            
         </div>
         <div class="vmodal-body" data-content>
             <h1>DEVELOPER ON JOB</h1>
@@ -39,7 +27,6 @@ function _createModal(options) {
         </div>
     </div>
 </div>
-
     ${options.closable ? `
     <button class="close-vmodal" data-close="true">
     <svg data-close="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
@@ -48,24 +35,14 @@ function _createModal(options) {
     </svg>
 </button>` : ''}
     `)
-
-
-    // const vWindow = document.querySelector('.vmodal-window')
-
     const gallery = _createCarousel(options.galleries) 
-
     gallery.appendAfter(modal.querySelector('[data-content]'))
-
-    // modalParent.appendChild(modal)
     document.body.appendChild(modal)
     return modal
 }  
-
 function _createCarousel(options) {
-
     const wrap = document.createElement('div')
     wrap.classList.add('carousel-wrap') 
-
     wrap.insertAdjacentHTML('afterbegin',
     `
         <div class="gallery">
@@ -75,33 +52,11 @@ function _createCarousel(options) {
         </div>
     `
     )
-
     return wrap
 }
 
-const modalWindow = document.querySelector('.vmodal-window')
-
-// function wipeScroll () {
-//     modalWindow.addEventListener('scroll', () => {
-//         let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight)
-//
-//         if (!btnPressed && (window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)) {
-//
-//             document.querySelector(selector).click()
-//
-//
-//         }
-//     })
-// }
-
-
-
-
-
-
 
 $.modal = function(options) {
-
     const $modal = _createModal(options)
     const btnClose = document.querySelector('.close-vmodal')
     const ANIMATION_SPEED = 350
@@ -109,60 +64,41 @@ $.modal = function(options) {
     const navBrand = document.querySelector('.navbar-brand')
     let closing = false
     let destroyed = false
-
     const modal = {
         open() {
             if (destroyed) {
                 return console.log('Modal was destroy');
             }
-
             !closing && $modal.classList.add('open')
             btnClose.style.visibility = 'visible'
             btnClose.classList.add('active')
             navBrand.style.visibility = 'hidden'
             notCollapsed.style.visibility = 'hidden'
-
-
         },
         close() {
             $modal.classList.remove('open')
             $modal.classList.add('hide')
             btnClose.style.visibility = 'hidden'
             notCollapsed.style.visibility = 'visible'
-
             navBrand.style.visibility = 'visible'
-
             closing = true
             setTimeout(() => {
                 $modal.classList.remove('hide')
                 closing = false
             }, ANIMATION_SPEED)
-            
+            const modalWindow = $modal.querySelector('.vmodal-window')
+                modalWindow.scrollTop = 0
         },
     }
-
-
-
     const listener = event => {
-
         if (event.target.parentNode.dataset.close || event.target.dataset.close) {
-            // console.log(event.target)
             modal.close()
         }
-
         if (event.target.parentNode.dataset.open || event.target.dataset.open) {
             modal.open()
         }
-
     }
-
     $modal.addEventListener('click', listener)
-
-
-
-
-
-
     return Object.assign(modal, {
         destroy() {
             $modal.parentNode.removeChild($modal)
@@ -182,5 +118,4 @@ $.modal = function(options) {
             $modal.querySelector('[data-gallery]').innerHTML = html
         }
     })
-
 }

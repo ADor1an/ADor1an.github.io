@@ -2,10 +2,6 @@
  const modalBtn = document.querySelector('.btn')
 
 
-    // closeModal = (what_Modal) => {
-    //     modal.hide()
-    //   }
-
 
 
 const form = document.querySelector('#form')

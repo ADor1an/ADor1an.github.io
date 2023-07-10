@@ -1,0 +1,47 @@
+{
+  "subjects" : [
+      {
+      "id": 1, 
+      "title": "ТОВ «АМБАР+»", 
+      "img": "https://zeo.ua/storage/app/media/objects/amb1.jpg",
+      "idobj": "#nav-north"
+      },
+      {
+      "id": 2,
+      "title": "ТОВ «НОВОТЕХ-ТЕРМІНАЛ»",
+      "img": "https://zeo.ua/storage/app/media/objects/Building/prev.jpg",
+      "idobj": "#nav-center"
+      },
+      {
+      "id": 3,
+      "title": "ТОВ «МВ КАРГО» (CARGILL)",
+      
+      "img": "https://zeo.ua/storage/app/media/objects/Building/cargo-prev.jpg",
+      "idobj": "#nav-west"
+      },
+      {
+      "id": 4,
+      "title": "ТОВ «БУЧАЧАГРОХЛІБПРОМ»", 
+      "img": "https://zeo.ua/storage/app/media/services/stroitelstvo/buchach-new.jpg",
+      "idobj": "#nav-north"
+      },
+      {
+      "id": 5, 
+      "title": "ТОВ «ОЛСІДЗ БЛЕК СІ»", 
+      "img": "https://zeo.ua/storage/app/media/services/stroitelstvo/olsidz-new.jpg",
+      "idobj": "#nav-center"
+      },
+      {
+      "id": 6, 
+      "title": "ТОВ «COFCO-AGRI»", 
+      "img": "https://zeo.ua/storage/app/media/services/stroitelstvo/cofco-new.jpg",
+      "idobj": "#nav-west"
+      },
+      {
+      "id": 7, 
+      "title": "ТОВ «ТІС-ЗЕРНО»", 
+      "img": "https://zeo.ua/storage/app/media/objects/Building/tis-new.jpg",
+      "idobj": "#nav-south"
+      }
+]
+}
